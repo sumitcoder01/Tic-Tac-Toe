@@ -1,0 +1,46 @@
+nav {
+    height: 13vw;
+}
+
+#navtitle{
+    font-size: 5vw;
+}
+
+.gameinfo h1{
+    font-size: 1.32rem;
+    text-align: center;
+}
+
+.info {
+    font-size: 1.22rem;
+}
+
+.btn {
+    height: 37px;
+    width: 63px;
+    border-radius: 32px;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+.gamecontainer{
+    height: 53vw;
+}
+
+.game{
+width: 63%;
+height: 98%;
+}
+@media screen and(max-width:198px){
+    .game {
+        width: 64%;
+        height: 134%;
+    }
+    .gamecontainer{
+        height: 56vw;
+    }
+    .gameinfo h1{
+        font-size: 1.21rem;
+        text-align: center;
+    }
+}

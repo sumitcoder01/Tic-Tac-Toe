@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+/* CSS Reset */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: gainsboro;
+}
+/* nav */
+nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 6vw;
+    width: 100%;
+}
+#navtitle{
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 27px;
+}
+/* game */
+.gamecontainer{
+    display: flex;
+    margin: 21px 2px;
+    height: 35vw;
+    gap:155px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    display: grid;
+    width: 46%;
+    height: 91%;
+    position: relative;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 6vw;
+    font-weight: 300;
+    border: solid 1px black;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+.block:hover{
+    background: rgb(186 241 186);
+}
+
+.gameinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: auto;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.info{
+    font-size:1.5rem;
+}
+
+#gif img{
+    opacity: 0;
+    transition: opacity 0.6s  ease-in;
+    height: 100px;
+    width: 100px;
+    margin-top: 31px;
+}
+/* line */
+#line {
+    height:2px;
+    opacity: 0;
+    width: 70%;
+    top: 49%;
+    left: 6%;
+    background: purple;
+    transition: opacity 0.9s ease-in-out;
+    position: absolute;
+}
+
+/* Utility functions */
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.btn{
+    height: 38px;
+    width: 69px;
+    border: solid 1px black;
+    cursor: pointer;
+    border-radius: 34px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: #1dd6d6;
+    margin-left: 30px;
+}
+.btn:hover{
+    background: #3a9494;
+}
